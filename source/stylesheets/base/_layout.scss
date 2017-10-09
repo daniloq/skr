@@ -16,3 +16,9 @@ body {
 body {
   margin: 0;
 }
+
+@mixin sk-wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0;
+}

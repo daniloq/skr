@@ -1,0 +1,30 @@
+.sr-company-info{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -3.125rem;
+  border-bottom: 0.0625rem solid $light-gray;
+  padding-bottom: 1.875rem;
+
+  &__container{
+    padding: 0 1.25rem;
+  }
+
+  &__logo{
+    height: 6.25rem;
+    width: 6.25rem;
+    display: inline-block;
+    margin: 0 auto 2.5rem auto;
+  }
+
+}
+
+.sr-search{
+  @include grid-container;
+
+  &__container{
+    @include grid-column(6);
+    @include grid-push(3);
+  }
+}

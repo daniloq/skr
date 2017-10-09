@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: $font-stack-system;
+$base-font-family: 'Open Sans', sans-serif;
 $heading-font-family: $base-font-family;
 
 // Line height
@@ -13,10 +13,18 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$blue: #00B9FF;
+$light-blue: lighten($blue, 20%);
+$dark-blue: darken($blue, 20%);
+$green: #00A99D;
+$yellow: #F1C968;
+$red: #DC6071;
+$dark-gray: #3B3B3B;
+$medium-gray: #595959;
+$light-gray: #EFEFEF;
+$white: #FFFFFF;
+$primary-color: $blue;
+$secondary-color: $green;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -39,3 +47,6 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Grid Max Width
+$max-width: 80rem;

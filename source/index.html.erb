@@ -2,27 +2,80 @@
 title: Silkroad
 ---
 
-<h1>Silkroad</h1>
+<%= partial "nav" %>
 
-<div class="default-neat-grid">
-  <div class="default-neat-grid__a-single-column">
-    1
-  </div>
-  <div class="default-neat-grid__a-single-column">
-    1
-  </div>
-  <div class="default-neat-grid__a-single-column">
-    1
-  </div>
-  <div class="default-neat-grid__a-single-column">
-    1
-  </div>
-  <div class="default-neat-grid__a-single-column">
-    1
-  </div>
-  <div class="default-neat-grid__a-single-column">
-    1
-  </div>
-</div>
+<div class="sr-hero"></div>
 
-<button>Test</button>
+<section class="sr-company-info">
+  <div class="sr-company-info__container">
+    <div class="sr-company-info__logo">
+      <%= image_tag 'logo.png' %>
+    </div>
+    <h1>Accenture</h1>
+    <p>High performance. Delivered</p>
+  </div>
+</section>
+
+<section class="sr-search">
+  <div class="sr-search__container">
+    <form>
+      <input type="text" />
+      <div>
+        <select>
+          <option>Cananda</option>
+          <option>Mexico</option>
+          <option>United Kingdom</option>
+          <option>United States</option>
+        </select>
+        <select>
+          <option>Jacksonville, FL</option>
+          <option>San Francisco, CA</option>
+        </select>
+        <select>
+          <option>Design</option>
+          <option>Development</option>
+          <<option>Marketing</option>
+        </select>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="sr-search">
+  <div class="sr-search__container">
+    <h2>Design</h2>
+    <% link_to '/', class: 'sr-panel' do %>
+      <div class="sr-panel__title">
+        Senior Product Designer
+      </div>
+      <div>
+        <span class="sr-panel__meta">Jacksonville, FL</span>
+      </div>
+    <% end %>
+    <% link_to '/', class: 'sr-panel' do %>
+      <div class="sr-panel__title">
+        Product Designer
+      </div>
+      <div>
+        <span class="sr-panel__meta">San Francisco, CA</span>
+      </div>
+    <% end %>
+    <h2>Development</h2>
+    <% link_to '/', class: 'sr-panel' do %>
+      <div class="sr-panel__title">
+        Front End Engineer
+      </div>
+      <div>
+        <span class="sr-panel__meta">Jacksonville, FL</span>
+      </div>
+    <% end %>
+    <% link_to '/', class: 'sr-panel' do %>
+      <div class="sr-panel__title">
+        Software Developer
+      </div>
+      <div>
+        <span class="sr-panel__meta">San Francisco, CA</span>
+      </div>
+    <% end %>
+  </div>
+</section>

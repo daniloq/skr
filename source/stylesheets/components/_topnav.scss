@@ -1,0 +1,23 @@
+.sr-topnav{
+  @include grid-container;
+  background-color: $primary-color;
+  padding: 0 1.25rem;
+
+  &__container{
+    @include sk-wrapper;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.688rem;
+  }
+
+  &__logo{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &__item{
+    color: $white;
+    margin-left: 2.5rem;
+  }
+}

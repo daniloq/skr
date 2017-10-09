@@ -1,0 +1,27 @@
+.sr-panel{
+  display: flex;
+  border: 0.0625rem solid $light-gray;
+  justify-content: space-between;
+  padding: 1.563rem 1.25rem;
+
+  &:not(:last-of-type){
+    border-bottom: none;
+  }
+
+  &__title{
+    font-size: 1rem;
+  }
+
+  &__meta{
+    color: lighten($medium-gray, 30%);
+  }
+
+}
+
+a.sr-panel{
+
+  &:hover{
+    background-color: $light-gray;
+  }
+
+}
